@@ -238,7 +238,7 @@ const Phones = styled.img`
 function Top(){
   return(
     <Wrapper>
-      <h1 style={{textAlign:'center'}}>
+      <h1 style={{textAlign:'center'}} >
         Designed for the future
       </h1>
       <div>
@@ -262,10 +262,11 @@ function Top(){
           </p>
           </div>
         </section>
-        <section className='second'>
-           <div style={{height:'400px',alignContent:'center',overflowX:'clip',padding:'20px',zIndex:'-1'}} className='desktop top top-info'>
-               <img src={editorDesktop}  ></img>
-           </div>
+        <section className='second' >
+          <div className='desktop top top-info' style={{height:'400px',alignContent:'center',overflowX:'clip',padding:'20px',zIndex:'-1'}}>
+          <img src={editorDesktop} ></img>
+          </div>
+          
            <div className='mobile' >
                <img src={editorMobile} ></img>
            </div>
