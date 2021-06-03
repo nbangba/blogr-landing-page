@@ -179,6 +179,7 @@ section{
   position:relative;
   flex:1 0;
 }
+
 .mid-container-info{
   margin:auto 0;
   padding:0 calc(100vw/30);
@@ -187,7 +188,7 @@ section{
 }
 
 @media screen  and (min-width:1400px){
-  margin-top:220px;
+  margin-top:250px;
 }
 
 @media screen  and (max-width:1080px){
