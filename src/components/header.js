@@ -201,7 +201,26 @@ const ModalContent = styled.div`
 function MenuItemComponent({menuItemName,subMenuItems}){
   const [openMenuItem, setOpenMenuItem] = useState(null)
   console.log(subMenuItems)
-  
+  const variants={
+    hidden:{
+      opacity:0,
+      height:'0px',
+      transition:{
+          duration:.5,
+      },
+      transitionEnd:{
+        display:'none',
+      }
+    },
+    visible:{
+        opacity:1,
+        display:'block',
+        height:'fit-content',
+        transition:{
+            duration:.5,
+        },
+    }
+}
   const style={
     color:`${!openMenuItem?'hsl(208, 49%, 24%)':'hsl(208, 49%, 24%,0.7)'}`,
     fontSize:'large',
@@ -214,17 +233,23 @@ function MenuItemComponent({menuItemName,subMenuItems}){
   return(
      
      <li  style={style} >
-       <div tabIndex={-2} style={{width:'fit-content',margin:'auto',cursor:'pointer'}} onClick={()=>setOpenMenuItem(!openMenuItem)} onBlur={()=>setOpenMenuItem(false)}>
+       <div tabIndex={-2} style={{width:'fit-content',margin:'auto',cursor:'pointer'}} onClick={()=>setOpenMenuItem(!openMenuItem)} 
+       onBlur={()=> setTimeout(() => {
+        setOpenMenuItem(false)
+       }, 300)}>
         {menuItemName}
         <span><img src={darkArrow} style={{marginLeft:'5px'}} className={openMenuItem==null?'':openMenuItem?'arrow-up':'arrow-down'}></img></span>
         </div>
-        {openMenuItem &&
-        <ul style={{background:'#efeff0',padding:'10px 0px',margin:'10px 10px',borderRadius:'10px'}}>
+        {
+        <motion.ul 
+        variants={variants} initial={{background:'#efeff0',padding:'10px 0px',margin:'10px 10px',borderRadius:'10px',display:'none',}}
+         animate={openMenuItem==null?'':openMenuItem?'visible':'hidden'}
+        >
           {subMenuItems.map(item=>
             <li style={{width:'fit-content',margin:'auto',cursor:'pointer'}}>
               {item}
             </li>)}
-        </ul>
+        </motion.ul>
         }
      </li>
   )
@@ -251,7 +276,7 @@ function MobileMenu(){
               color:'hsl(208, 49%, 24%)',
               fontSize:'large',
               fontWeight:'bold',margin:'10px 0'}}>
-              Login
+                Login
               </Button>
               <Button secondary 
               style={{margin:'auto',fontSize:'large',fontWeight:'bold',

@@ -248,19 +248,17 @@ function Top(){
             Introducing an extensible editor
           </h2>
           <p >
-              Donec mollis tellus quis bibendum convallis. Vestibulum varius magna non egestas efficitur. 
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-              Phasellus eu metus condimentum, fringilla ipsum a, fringilla tellus. Praesent non libero risus. 
-              Nunc quis nulla non massa ultrices dignissim. In et sagittis ante. Curabitur ultricies tempor justo, 
-              id mollis ipsum tempus nec. Phasellus erat justo, porttitor nec neque a, auctor placerat augue.
+          Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+          The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos,
+           and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
           </p>
           <h2>
-            Introducing an extensible editor
+          Robust content management
           </h2>
           <p >
-              Phasellus eu metus condimentum, fringilla ipsum a, fringilla tellus. Praesent non libero risus. 
-              Nunc quis nulla non massa ultrices dignissim. In et sagittis ante. Curabitur ultricies tempor justo, 
-              id mollis ipsum tempus nec. Phasellus erat justo, porttitor nec neque a, auctor placerat augue.
+          Flexible content management enables users to easily move through posts. 
+          Increase the usability of your blog by adding customized categories, sections, format, or flow.
+          With this functionality, you’re in full control.
           </p>
           </div>
         </section>
@@ -287,12 +285,11 @@ function Middle() {
        <section className='mid-container-info'>
          <div>
          <h2>
-            Introducing an extensible editor
+         State of the Art Infrastructure
           </h2>
           <p >
-              Phasellus eu metus condimentum, fringilla ipsum a, fringilla tellus. Praesent non libero risus. 
-              Nunc quis nulla non massa ultrices dignissim. In et sagittis ante. Curabitur ultricies tempor justo, 
-              id mollis ipsum tempus nec. Phasellus erat justo, porttitor nec neque a, auctor placerat augue.
+          With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+          This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
           </p>
          </div>
        
@@ -316,22 +313,19 @@ function Bottom(){
         <section  className='first bottom-info'>
           <div>
           <h2>
-            Introducing an extensible editor
+          Free, open, simple
           </h2>
           <p >
-              Donec mollis tellus quis bibendum convallis. Vestibulum varius magna non egestas efficitur. 
-              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-              Phasellus eu metus condimentum, fringilla ipsum a, fringilla tellus. Praesent non libero risus. 
-              Nunc quis nulla non massa ultrices dignissim. In et sagittis ante. Curabitur ultricies tempor justo, 
-              id mollis ipsum tempus nec. Phasellus erat justo, porttitor nec neque a, auctor placerat augue.
+          Blogr is a free and open source application backed by a large community of helpful developers. 
+          It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+          and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
           </p>
           <h2>
-            Introducing an extensible editor
+          Powerful tooling
           </h2>
           <p >
-              Phasellus eu metus condimentum, fringilla ipsum a, fringilla tellus. Praesent non libero risus. 
-              Nunc quis nulla non massa ultrices dignissim. In et sagittis ante. Curabitur ultricies tempor justo, 
-              id mollis ipsum tempus nec. Phasellus erat justo, porttitor nec neque a, auctor placerat augue.
+          Batteries included. We built a simple and straightforward CLI tool that makes customization 
+          and deployment a breeze, but capable of producing even the most complicated sites.
           </p>
           </div>
         </section>

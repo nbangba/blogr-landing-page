@@ -59,6 +59,14 @@ const FooterItems = styled.div`
         text-align:left;
     }
 
+    a{
+        text-decoration:none;
+        color: white;
+        &:hover{
+            text-decoration:underline
+        }
+    }
+
 `
 export default function Footer() {
     return (
@@ -70,19 +78,19 @@ export default function Footer() {
                 <h3>Product</h3>
                 <ul>
                     <li>
-                        Overview
+                    <a href=''>Overview</a> 
                     </li>
                     <li>
-                        Pricing
+                    <a href=''>Pricing</a>   
                     </li>
                     <li>
-                        Marketplace
+                    <a href=''>Marketplace</a>   
                     </li>
                     <li>
-                        Features
+                    <a href=''> Features</a>  
                     </li>
                     <li>
-                        Integrations
+                    <a href=''>Integrations</a>  
                     </li>
                 </ul>
             </FooterItems>
@@ -90,16 +98,16 @@ export default function Footer() {
                 <h3>Company</h3>
                 <ul>
                     <li>
-                        About
+                    <a href=''>About</a>   
                     </li>
                     <li>
-                        Team
+                    <a href=''>Team</a>   
                     </li>
                     <li>
-                        Blog
+                    <a href=''>Blog</a>   
                     </li>
                     <li>
-                        Careers
+                    <a href=''>Careers</a>   
                     </li>
                 </ul>
             </FooterItems>
@@ -107,13 +115,13 @@ export default function Footer() {
                 <h3>Connect</h3>
                 <ul>
                     <li>
-                        Contact
+                    <a href=''>Contact</a>    
                     </li>
                     <li>
-                        Newsletter
+                    <a href=''>Newsletter</a>    
                     </li>
                     <li>
-                        Linkedin
+                    <a href=''>Linkedin</a>    
                     </li>
                     <li>
                         <i class="fa fa-linkedin" aria-hidden="true"></i>
