@@ -1,38 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+.app-bar-item {
+  margin: 10px;
+}
+
 .App {
-  text-align: center;
+  font-family: "Overpass", sans-serif;
+}
+.App footer {
+  font-family: "Ubuntu", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+  margin: 0 10px;
+  color: rgba(255, 255, 255, 0.623);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-size: 16px;
+}
+
+#tooltip {
+  width: 100px;
+  background: white;
+  color: black;
+  font-weight: normal;
+  padding: 4px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  margin-top: 10px;
+  display: none;
+}
+
+#tooltip[data-show] {
+  display: block;
+}
+
+.arrow-up {
+  -webkit-animation: up 0.3s ease-in;
+          animation: up 0.3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.arrow-down {
+  -webkit-animation: down 0.3s ease-in;
+          animation: down 0.3s ease-in;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes up {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+  100% {
+    -webkit-transform: rotate(0.5turn);
+            transform: rotate(0.5turn);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes up {
+  0% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+    -webkit-transform: rotate(0.5turn);
+            transform: rotate(0.5turn);
+  }
+}
+@-webkit-keyframes down {
+  0% {
+    -webkit-transform: rotate(0.5turn);
+            transform: rotate(0.5turn);
+  }
+  100% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
+  }
+}
+@keyframes down {
+  0% {
+    -webkit-transform: rotate(0.5turn);
+            transform: rotate(0.5turn);
+  }
+  100% {
+    -webkit-transform: rotate(0turn);
+            transform: rotate(0turn);
   }
 }

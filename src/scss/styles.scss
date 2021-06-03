@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+.app-bar-item{
+    margin:10px;
+
+}
+
+.App{
+  font-family: 'Overpass', sans-serif;
+  footer{
+    font-family: 'Ubuntu', sans-serif;
+  }
+}
+
+.button{
+    margin:0 10px;
+    color:hsla(0, 0%, 100%, 0.623);
+}
+body{
+  font-size: 16px;
+}
+#tooltip {
+    width:100px; 
+    background: white;
+    color: black;
+    font-weight: normal;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-top: 10px;
+    display: none;
+  } 
+
+  
+  #tooltip[data-show] {
+    display: block;
+  }
+
+  .arrow-up{
+    animation: up 0.3s ease-in;
+    animation-fill-mode: forwards;
+  } 
+  .arrow-down{
+      animation: down 0.3s ease-in;
+      animation-fill-mode: forwards;
+  }
+
+  @keyframes up {
+     0%{
+        transform: rotate(0.0turn) ;
+      }
+      100%{
+        transform: rotate(0.5turn) ; 
+      }
+  }
+  
+  @keyframes down {
+    0%{
+       transform: rotate(0.5turn) ;
+     }
+     100%{
+       transform: rotate(0.0turn) ; 
+     }
+ }
