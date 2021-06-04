@@ -24,8 +24,8 @@ const HeaderBG = styled.header`
  z-index:10;
  min-width:100%;
  background: url(${headerSVG}),linear-gradient(190deg,hsl(13, 100%, 72%),hsl(353, 100%, 62%));
- height:400px;
- border-radius: 0px 0px 0px 100px;
+ height:450px;
+ border-radius: 0px 0px 0px 80px;
  background-position:center;
  background-size:200%;
  font-family: 'Overpass', sans-serif;
@@ -255,9 +255,8 @@ function MenuItemComponent({menuItemName,subMenuItems}){
   )
 }
 
-function MobileMenu(){
-  const menuItems = {Product:['Overview','Pricing','Marketplace','Features','Integration'],
-     Company:['About','Blog','Team','Careers'],Connect:['Contact','Newsletter','LinkedIn']}
+function MobileMenu({menuItems}){
+  
   const menuItemNames =  Object.keys(menuItems) 
 
   console.log(menuItems['Product'])
@@ -293,7 +292,8 @@ function MobileMenu(){
 
 export default function Header() {
     const [openMobileMenu, setopenMobileMenu] = useState(false) 
-
+    const menuItems = {Product:['Overview','Pricing','Marketplace','Features','Integration'],
+     Company:['About','Blog','Team','Careers'],Connect:['Contact','Newsletter','LinkedIn']}
     return (
         <>
         <HeaderBG>
@@ -305,7 +305,7 @@ export default function Header() {
           <HamburgerWrapper onClick={()=> setopenMobileMenu(false)}>
           <img src={closeIcon}/>
           </HamburgerWrapper>
-          <MobileMenu/>
+          <MobileMenu menuItems={menuItems}/>
           </>
           }
         
@@ -315,22 +315,15 @@ export default function Header() {
            </LogoWrapper>
            <div style={{display:'flex',flexGrow:1}}>
             <Menu>
-                <MenuItem className='app-bar-item' >
-                    <Link href="">Product </Link> 
-                    <span><img src={lightArrow}></img></span>
-                </MenuItem>
+                {Object.keys(menuItems).map((item,index)=>
                 <MenuItem className='app-bar-item'>
-                    <Link href="">Company</Link>
-                    <span><img src={lightArrow}></img></span>
-                </MenuItem>
-                <MenuItem className='app-bar-item'>
-                  <Popper>
+                  <Popper subMenuItems={menuItems[`${item}`]} index={index}>
                      {(setReferenceElement,setOpen,open)=>
                       <>
-                       <Link tabIndex='-1' ref={setReferenceElement} 
+                       <Link tabIndex={-index} ref={setReferenceElement} 
                        onClick={()=>setOpen(!open)} 
                        onBlur={()=>setOpen(false)}>
-                         Name
+                         {item}
                        </Link>
                        <span><img src={lightArrow} className={open==null?'':open?'arrow-up':'arrow-down'}></img></span>
                       </> 
@@ -338,6 +331,7 @@ export default function Header() {
                   </Popper>
                     
                 </MenuItem>
+                )}
             </Menu> 
             <Menu left>
                 <MenuItem className='button' style={{width:'120px'}}>

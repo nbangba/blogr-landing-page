@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react';
 import { usePopper} from 'react-popper';
 import { motion } from "framer-motion"
 import styled from 'styled-components'
-const Example = (props) => {
+const Example = ({subMenuItems,children,index}) => {
 
   const [referenceElement, setReferenceElement] = useState(null);
   const [popperElement, setPopperElement] = useState(null);
@@ -28,11 +28,13 @@ const Example = (props) => {
   }
 
   const buttons = document.querySelector('#menuItem');
-  const tooltip = document.querySelector('#tooltip');
+  const tooltip = document.getElementsByClassName('tooltip')[index];
   
   function show() {
+    if(tooltip){
+    console.log(tooltip)
     tooltip.setAttribute('data-show', '');
-  
+    }
     // We need to tell Popper to update the tooltip position
     // after we show the tooltip, otherwise it will be incorrect
     update();
@@ -79,18 +81,20 @@ const Example = (props) => {
       width:100%;
       display:block;
       font-family: 'Ubuntu', sans-serif;
+      padding:5px;
+      text-align:left;
       
   `
   return (
     <>
-       {props.children(setReferenceElement,setOpen,open)}
+       {children(setReferenceElement,setOpen,open)}
 
-      <motion.div id="tooltip" ref={setPopperElement} style={styles.popper} {...attributes.popper}
+      <motion.div className='tooltip' ref={setPopperElement} style={{...styles.popper,padding:'20px',minWidth:'150px'}} {...attributes.popper}
       variants={variants}
       animate={open?'visible':'hidden'}
       >
         <MenuContent>
-            {menuItems.map((item)=> 
+            {subMenuItems.map((item)=> 
               <MenuContentList>
                   <a href='' >{item}</a>
               </MenuContentList>

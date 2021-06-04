@@ -33,7 +33,7 @@ const FooterWrapper = styled.footer`
       height:fit-content;
       justify-content:center;
       background-color:hsl(240, 10%, 16%);
-      border-radius: 0px 100px 0px 0px;
+      border-radius: 0px 80px 0px 0px;
       padding:0 calc((100vw)/25);
       box-sizing:border-box;
       min-width:100%;

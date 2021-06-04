@@ -171,7 +171,7 @@ background-position:left -200px bottom -100px,0px 0px;
 background-repeat:no-repeat;
 width:100%;
 height:400px;
-border-radius: 0px 100px 0px 100px;
+border-radius: 0px 80px 0px 80px;
 display:flex;
 flex-wrap:wrap;
 min-width:100%;
