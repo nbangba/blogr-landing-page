@@ -180,6 +180,11 @@ border-radius: 0px 80px 0px 80px;
 display:flex;
 flex-wrap:wrap;
 min-width:100%;
+color:white;
+
+h2{
+  color:white;
+}
 section{
   position:relative;
   flex:1 0;
