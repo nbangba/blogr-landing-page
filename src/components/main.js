@@ -106,6 +106,7 @@ const mediaQueryStyles = css`
     h2{
       width:100%;
       text-align:center;
+      
     }
    }
 
@@ -113,6 +114,10 @@ const mediaQueryStyles = css`
 const MainArea = styled.div`
   position:relative;
   text-align:left;
+  color:hsl(207, 13%, 34%);
+  h2{
+    color:hsl(208, 49%, 24%);
+  }
   ${mediaQueryStyles}
 `
 
@@ -239,7 +244,7 @@ const Phones = styled.img`
 function Top(){
   return(
     <Wrapper>
-      <h1 style={{textAlign:'center'}} >
+      <h1 style={{textAlign:'center',color:'hsl(208, 49%, 24%)'}} >
         Designed for the future
       </h1>
       <div>

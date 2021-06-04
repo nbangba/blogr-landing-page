@@ -37,6 +37,7 @@ const FooterWrapper = styled.footer`
       padding:0 calc((100vw)/25);
       box-sizing:border-box;
       min-width:100%;
+      color:hsl(240, 2%, 79%);
       ${mediaQueryStyles}
 `
 
@@ -61,7 +62,7 @@ const FooterItems = styled.div`
 
     a{
         text-decoration:none;
-        color: white;
+        color:hsl(240, 2%, 79%);
         &:hover{
             text-decoration:underline
         }
