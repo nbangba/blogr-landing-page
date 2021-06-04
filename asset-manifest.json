@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/blogr-landing-page/static/css/main.6ef2ccbb.chunk.css",
-    "main.js": "/blogr-landing-page/static/js/main.ff63a55a.chunk.js",
-    "main.js.map": "/blogr-landing-page/static/js/main.ff63a55a.chunk.js.map",
+    "main.css": "/blogr-landing-page/static/css/main.5d6c17b0.chunk.css",
+    "main.js": "/blogr-landing-page/static/js/main.a08f122b.chunk.js",
+    "main.js.map": "/blogr-landing-page/static/js/main.a08f122b.chunk.js.map",
     "runtime-main.js": "/blogr-landing-page/static/js/runtime-main.cbb682af.js",
     "runtime-main.js.map": "/blogr-landing-page/static/js/runtime-main.cbb682af.js.map",
-    "static/js/2.42859607.chunk.js": "/blogr-landing-page/static/js/2.42859607.chunk.js",
-    "static/js/2.42859607.chunk.js.map": "/blogr-landing-page/static/js/2.42859607.chunk.js.map",
+    "static/js/2.51cf768d.chunk.js": "/blogr-landing-page/static/js/2.51cf768d.chunk.js",
+    "static/js/2.51cf768d.chunk.js.map": "/blogr-landing-page/static/js/2.51cf768d.chunk.js.map",
     "static/js/3.98d719c8.chunk.js": "/blogr-landing-page/static/js/3.98d719c8.chunk.js",
     "static/js/3.98d719c8.chunk.js.map": "/blogr-landing-page/static/js/3.98d719c8.chunk.js.map",
     "index.html": "/blogr-landing-page/index.html",
-    "static/css/main.6ef2ccbb.chunk.css.map": "/blogr-landing-page/static/css/main.6ef2ccbb.chunk.css.map",
-    "static/js/2.42859607.chunk.js.LICENSE.txt": "/blogr-landing-page/static/js/2.42859607.chunk.js.LICENSE.txt",
+    "static/css/main.5d6c17b0.chunk.css.map": "/blogr-landing-page/static/css/main.5d6c17b0.chunk.css.map",
+    "static/js/2.51cf768d.chunk.js.LICENSE.txt": "/blogr-landing-page/static/js/2.51cf768d.chunk.js.LICENSE.txt",
     "static/media/bg-pattern-circles.bae804b8.svg": "/blogr-landing-page/static/media/bg-pattern-circles.bae804b8.svg",
     "static/media/bg-pattern-intro.bf6b3e1b.svg": "/blogr-landing-page/static/media/bg-pattern-intro.bf6b3e1b.svg",
     "static/media/icon-arrow-dark.5215f8d9.svg": "/blogr-landing-page/static/media/icon-arrow-dark.5215f8d9.svg",
@@ -28,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cbb682af.js",
-    "static/js/2.42859607.chunk.js",
-    "static/css/main.6ef2ccbb.chunk.css",
-    "static/js/main.ff63a55a.chunk.js"
+    "static/js/2.51cf768d.chunk.js",
+    "static/css/main.5d6c17b0.chunk.css",
+    "static/js/main.a08f122b.chunk.js"
   ]
 }
